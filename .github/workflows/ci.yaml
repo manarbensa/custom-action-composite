@@ -1,0 +1,7 @@
+name: CI Workflow
+on: [push, pull_request]
+jobs:
+  say_hello:
+    uses: ./.github/workflows/hello.yml
+    with:
+      prenom: 'manar'
